@@ -21,48 +21,51 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="row">
-        <div class="col-3">
+      <div class="container"> 
+        <div class="header__area">
           <div class="logo"><img src="assets/img/logo.png.webp" alt="" /></div>
-        </div>
-        <div class="col-6">
-          <nav class="nav_ul">
-            <ul class="ul_navbar">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+          <a href="#" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+            </a>
+          <nav class="nav_area">
+            <ul class="nav__list">
+              <li class="nav__list__item"><a href="#">Home</a></li>
+              <li class="nav__list__item"><a href="#">Shop</a></li>
+              <li class="nav__list__item"><a href="#">Pages</a></li>
+              <li class="nav__list__item"><a href="#">Blog</a></li>
+              <li class="nav__list__item"><a href="#">Contact</a></li>
             </ul>
           </nav>
-        </div>
-        <div class="col-3">
-          <div class="wish_basket_list">
-            <div class="heart_basket_btn">
-              <i class="fa-solid fa-heart"></i
-              ><sup class="basket_wishlist_count">1</sup>
-              <i class="fa fa-shopping-bag"></i
+          <div class="wrapper">
+            <div class="shooping">
+              <div class="heart">
+                <i class="fa-solid fa-heart"></i
+                ><sup class="basket_wishlist_count">1</sup>
+              </div>
+              <div class="basket">
+                <i class="fa fa-shopping-bag"></i
                 ><sup class="basket_wishlist_count">5</sup>
-            </div>
+              </div>
+           </div>
             <div class="header_price">
-              <p>item:</p>
+              <span>item:</span>
               <strong> $150.00 </strong>
             </div>
           </div>
-
-        </div>
       </div>
     </header>
 
-    <section id="hero">
+     <section id="hero">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3 col-md-12 col-sm-12">
               <div class="hero_categories">
                 <div class="hero_all_categories">
                   <i class="fa-solid fa-bars"></i>
                   <span> All departments</span>
+                  <i class="fa-solid fa-caret-down"></i>
                 </div>
                 <ul class="departments_category">
                   <li><a href="#">Fresh Meat</a></li>
@@ -80,17 +83,20 @@
               </div>
           </div>
        
-        <div class="col-9">
+        <div class="col-lg-9 col-md-12 col-sm-12">
           <div class="hero_search">
             <div class="search_form">
               <div class="search_category">
-                <span class="all_categories"
-                >All Categories <i class="fa-solid fa-caret-down"></i
-                  ></span>
-                </div> 
+                All Categories 
+                <div class="category_icon">
+                  <span>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </span>
+                </div>
+               </div> 
                 <form class="form_hero" action="#">
                   <input type="text" placeholder="What do u need?" />
-                  <button class="btn btn-danger">Search</button>
+                  <button class="search_btn_category">Search</button>
               </form>
             </div>
             <div class="search_phone">
@@ -102,24 +108,29 @@
                 <span>support 24/7 time</span>
               </div>
             </div>
-            
           </div>
+
+
+
+          
           <div class="hero_item">
             <img src="/assets/img/banner/logo.png.webp" alt="">
             <div class="hero_text">
-              <span class="hero_text_span">Fruit Fresh</span>
+              <span>Fruit Fresh</span>
               <h2>Vegetable 
                 <br>100% Organic
               </h2>
               <p>Free Pickup and Delivery Avaible</p>
-              <a href="#" class="">Shop Now</a>
+              <a href="#" class="primary-btn">Shop Now</a>
             </div>
           </div>
         </div>
       </div>
       </div>
-    </section>
+    </section> 
 
+    <script src="/assets/js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
       integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="

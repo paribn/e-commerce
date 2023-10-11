@@ -1,4 +1,4 @@
-$primary-color:#7FAD39;
+;$primary-color:#7FAD39;
 $footer-color:#F3F6FA;
 $text-color:#6F6F6F;
 $font-family: Cairo, sans-serif;
@@ -7,76 +7,18 @@ $font-navbar-weights:(
     "bold":800
 );
 
-.container{
-    border: 1px solid black;
+
+body{
+    font-family: $font-family;
 }
 
-.logo{
-    font-size: 16px;
-    // padding: 6px;
-    text-align: center;
-}
-
- .ul_navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 54px;
-    letter-spacing: 2px;
-    font-size: 14px;
-    text-transform: uppercase;
-   
-    li{
-        font-weight: map-get($font-navbar-weights ,medium );
-
-        a{
-          color: black;
-          &:hover{
-            color: $primary-color;
-        }
-        }
-       
-    }
-}
-.wish_basket_list{
-    display: flex;
-    justify-content:center;
-    padding: 6px;
-    gap: 18px;
-
-
-    .heart_basket_btn{
-        font-size:18px;
-        background-color:#FFFFFF;
-        .basket_wishlist_count{
-            padding: 3px;
-            text-align: center;
-            font-size: 10px;
-            font-weight: map-get($font-navbar-weights, medium );
-            color: #FFFFFF;
-            border-radius: 100%;
-            background-color: $primary-color;
-        }
-    }
-    .header_price{
-        display: flex;
-        font-size: 14px;
-        p{
-            color: $text-color;
-        }
-        strong{
-            font-weight:map-get($font-navbar-weights,bold);
-        }
-    }
-}
 
 /// section two
 
 
 .hero_categories{
     padding: 6px 8px 6px 8px;
-    margin-left: 60px;
+    margin-left: 40px;
 
     .hero_all_categories{
         width: 250px;
@@ -101,47 +43,134 @@ $font-navbar-weights:(
 
 .hero_search{
     display: flex;
-    justify-content: space-around;
-    padding: 12px;
+    padding: 5px 0;
+    gap: 65px;
 
     .search_form{
         display: flex;
         height: 48px;
+            border: 1px solid #EBEBEB;
+        
 
         .search_category{
-            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 182px;
+            height: 48px;
+            border-right: 0;
+            font-weight: map-get($font-navbar-weights , bold );
+&::after{
+    content: "\2758";
+    color: #EBEBEB;
+}
+    
+
+           
         }
 
         .form_hero{
-            width: 100%;
-            height: 100%;
+            // width: 100%;
+            // height: 100%;
             display: flex;
 
-
+            input{
+                width: 300px;
+                padding-left:10px;
+                border: 0;
+            }
             input,
             button{
                 height: 100%;
+                
             }
 
-            .btn-danger{
-                border-radius: 0;
+            .search_btn_category{
+                width: 109px;
+                height: 46px;
+                background-color: $primary-color;
+                color: white;
             }
         }
     }
-} // bitmiyib
+
+    .search_phone{
+        display: flex;
+        gap: 14px;
+        .phone_icon{
+            background-color: $footer-color;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $primary-color;
+        }
+
+        .contact_text{
+            display: flex;
+            flex-direction: column;
+            
+            h5{
+                font-weight: map-get($font-navbar-weights, medium );
+                font-size: 18px;
+            }
+            span{
+                text-decoration: none solid rgb(111, 111, 111);
+                font-size: 14px;
+                margin-left: 4px;
+            }
+        }
+    }
+
+} 
 
 
 .hero_item{
     position: relative;
     display: flex;
     align-items: center;
+    height: 431px;
+    margin-top: 14px;
     .hero_text{
         position: absolute;
-        right: 30%;
+        right: 60%;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
+        
+        span{
+            letter-spacing: 4px;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $primary-color;
+            font-weight: map-get($font-navbar-weights , bold );
+        }
+        h2{
+            font-weight: map-get($font-navbar-weights, bold );
+            line-height: 52px;
+            color: #252525;
+            font-size: 40px;
+            margin: 10px 0;
+        }
+        p{
+            font-size: 16px;
+            color: #6F6F6F;
+            margin: 0 0 15px 0;
+        }
+        .primary-btn{
+            display: inline-block;
+            font-size: 14px;
+            padding: 10px 28px 10px 28px;
+            color: white;
+            text-transform:uppercase;
+            font-weight: map-get($font-navbar-weights ,medium );
+            background-color: $primary-color;
+            letter-spacing: 2px;
+            width: 150px;
+        }
     }
 }
+
+
+
