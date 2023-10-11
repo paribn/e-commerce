@@ -1,0 +1,148 @@
+.container {
+  border: 1px solid black;
+}
+
+.logo {
+  font-size: 16px;
+  text-align: center;
+}
+
+.ul_navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 54px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.ul_navbar li {
+  font-weight: 700;
+}
+.ul_navbar li a {
+  color: black;
+}
+.ul_navbar li a:hover {
+  color: #7FAD39;
+}
+
+.wish_basket_list {
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+  gap: 18px;
+}
+.wish_basket_list .heart_basket_btn {
+  font-size: 18px;
+  background-color: #FFFFFF;
+}
+.wish_basket_list .heart_basket_btn .basket_wishlist_count {
+  padding: 3px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: #FFFFFF;
+  border-radius: 100%;
+  background-color: #7FAD39;
+}
+.wish_basket_list .header_price {
+  display: flex;
+  font-size: 14px;
+}
+.wish_basket_list .header_price p {
+  color: #6F6F6F;
+}
+.wish_basket_list .header_price strong {
+  font-weight: 800;
+}
+
+.hero_categories {
+  padding: 6px 8px 6px 8px;
+  margin-left: 60px;
+}
+.hero_categories .hero_all_categories {
+  width: 250px;
+  padding: 10px 25px 10px 40px;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  background-color: #7FAD39;
+}
+.hero_categories .departments_category {
+  padding: 12px 28px 20px 40px;
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+}
+.hero_categories .departments_category a {
+  color: black;
+}
+
+.hero_search {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+.hero_search .search_form {
+  display: flex;
+  height: 48px;
+}
+.hero_search .search_form .search_category {
+  width: 300px;
+}
+.hero_search .search_form .form_hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.hero_search .search_form .form_hero input,
+.hero_search .search_form .form_hero button {
+  height: 100%;
+}
+.hero_search .search_form .form_hero .btn-danger {
+  border-radius: 0;
+}
+
+.hero_item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.hero_item .hero_text {
+  position: absolute;
+  right: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 95%;
+}/*# sourceMappingURL=style.css.map */

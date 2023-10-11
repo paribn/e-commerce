@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+}
+input{
+    outline: none;
+}
+li{
+     list-style: none;
+}
+.container{
+   max-width:1320px;
+    margin: 0 auto;
+    width: 95%;
+}
