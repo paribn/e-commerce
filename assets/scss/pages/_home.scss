@@ -164,7 +164,7 @@ body {
 ///
 
 .slick-prev {
-  left: 27px !important;
+  left: 2px !important;
   z-index: 1;
 
   &::before {
@@ -179,7 +179,9 @@ body {
     color: black !important;
   }
 }
-
+.slick-slider{
+  margin-left: 14px;
+}
 .image_carusel {
   height: 270px;
   position: relative;

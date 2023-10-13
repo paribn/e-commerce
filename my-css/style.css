@@ -140,7 +140,7 @@ body {
 }
 
 .slick-prev {
-  left: 27px !important;
+  left: 2px !important;
   z-index: 1;
 }
 .slick-prev::before {
@@ -153,6 +153,10 @@ body {
 }
 .slick-next::before {
   color: black !important;
+}
+
+.slick-slider {
+  margin-left: 14px;
 }
 
 .image_carusel {
@@ -483,7 +487,7 @@ footer {
 }
 
 .container {
-  border: 1px solid black;
+  margin-top: 20px;
 }
 .container .header__area {
   display: flex;
