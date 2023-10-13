@@ -1,11 +1,24 @@
 // navbar
 
+const toggleButton = document.querySelector(".toggle_button");
+const navbarList = document.querySelector(".nav_area");
 
-// const toggleButton = document.getElementsByClassName('toggle_button')[0]
-// const navbarArea = document.getElementsByClassName('nav__list')[0]
+toggleButton.addEventListener("click", () => {
+  navbarList.classList.toggle("active");
+});
 
-// const peri = toggleButton.addEventListener('click', () => {
-//     navbarArea.classList.add('nav__list')
-//     console.log(peri);
-// })
 
+$(document).ready(function () {
+  $(".slick-carousel").slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    // autoplay:true,
+    // dots: true,
+    arrows: true,
+  });
+
+  $(".slick-carousel").on("swipe", function (event, slick, direction) {
+    console.log(direction);
+  });
+});

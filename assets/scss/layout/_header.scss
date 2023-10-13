@@ -1,125 +1,122 @@
 .container {
-    border: 1px solid black;
+  border: 1px solid black;
 
-    .header__area {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  .header__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        .logo{
-            font-size: 16px;
-             margin-left: 50px;
-        }
-
-        .nav__list {
-            display: flex;
-            gap: 54px;
-            margin: 0;
-            letter-spacing: 2px;
-            font-size: 14px;
-            text-transform: uppercase;
-            .nav__list__item{
-                font-weight: map-get($font-navbar-weights , medium);
-                a {
-                  color: black;
-          
-                  &:hover {
-                      color: $primary-color;
-                  }
-              }
-
-            }
-        }
-
-        .wrapper {
-            display: flex;
-            background-color: red;
-            margin-right: 99px;  /// deyish sonra
-            padding: 6px;
-
-            .shooping {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                margin-right: 35px;
-                .heart,
-                    .basket {
-                        font-size: 18px;
-                    }
-                      .basket_wishlist_count{
-                    padding: 3px;
-                    text-align: center;
-                    font-size: 10px;
-                    font-weight: map-get($font-navbar-weights, medium );
-                    color: #FFFFFF;
-                    border-radius: 100%;
-                    background-color: $primary-color;
-                    }
-            }
-        }
-            .header_price{
-                font-size: 14px;
-                span{
-                    color: $text-color;
-                }
-
-                strong{
-                    font-weight: map-get($font-navbar-weights, bold);
-                }
-            }
+    .logo {
+      font-size: 16px;
+      margin-left: 50px;
     }
+
+    .nav__list {
+      display: flex;
+      gap: 54px;
+      margin: 0;
+      letter-spacing: 2px;
+      font-size: 14px;
+      text-transform: uppercase;
+      .nav__list__item {
+        font-weight: map-get($font-navbar-weights, medium);
+        a {
+          color: black;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      margin-right: 99px; /// deyish sonra
+      padding: 6px;
+
+      .shooping {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-right: 35px;
+        .heart,
+        .basket {
+          font-size: 18px;
+        }
+        .basket_wishlist_count {
+          padding: 3px;
+          text-align: center;
+          font-size: 10px;
+          font-weight: map-get($font-navbar-weights, medium);
+          color: #ffffff;
+          border-radius: 100%;
+          background-color: $primary-color;
+        }
+      }
+    }
+    .header_price {
+      font-size: 14px;
+      span {
+        color: $text-color;
+      }
+
+      strong {
+        font-weight: map-get($font-navbar-weights, bold);
+      }
+    }
+  }
 }
 
 .toggle_button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 
-    .bar {
-        height: 3px;
-        width: 100%;
-        background-color: rgb(22, 19, 19);
-        border-radius: 10px;
-
-    }
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(22, 19, 19);
+    border-radius: 10px;
+  }
 }
 
 
-@media (max-width:992px) {
-    .toggle_button {
-        display: flex;
-    }
 
-    .nav_area {
-        display: none;
-        width: 100%;
+@media (max-width: 992px) {
+  .toggle_button {
+    display: flex;
+  }
 
-        .nav__list {
-            width: 100%;
-            flex-direction: column;
+  .active {
+    display: block !important;
+  }
 
-            .nav__list__item {
-                text-align: center;
+  .nav_area {
+    display: none;
+    width: 100%;
 
-                a {
-                    padding: .5rem 1rem;
-                }
-            }
+    .nav__list {
+      width: 100%;
+      flex-direction: column;
+
+      .nav__list__item {
+        text-align: center;
+
+        a {
+          padding: 0.5rem 1rem;
         }
-
-        .active {
-            display: flex;
-        }
+      }
     }
+  }
 
-    .header__area {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
+  .header__area {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
