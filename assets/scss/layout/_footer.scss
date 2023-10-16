@@ -1,9 +1,10 @@
+@import "../base/variables";
 footer {
   background-color: #f3f6fa;
-  padding-top: 70px;
+  padding-top: 20px;
+  margin-top: 30px;
 }
 .footer_about {
-  margin-left: 25px;
   margin-top: 30px;
 
   .footer_about_logo {
@@ -30,15 +31,14 @@ footer {
   h6 {
     font-weight: map-get($font-navbar-weights, bold);
     padding: 4px;
-    margin-left: 32px;
+    margin-left: 28px;
     margin-bottom: 10px;
   }
 
   ul {
-    width: 50%;
     float: left;
     li {
-      padding: 8px;
+      margin-top: 12px;
       a {
         color: #1c1c1c;
         line-height: 24px;
@@ -101,16 +101,42 @@ footer {
     }
   }
 }
-.footer_copyright{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 35px;
-    margin-top: 30px;
+.footer_copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 35px;
+  margin-top: 30px;
 
-    .footer_copyright_text p{
-        color: #6d6c6c;
-    }
-    .footer_copyright_payment{
-        display: inline;
-    }
+  .footer_copyright_text p {
+    color: #6d6c6c;
+  }
+  .footer_copyright_payment {
+    display: inline;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer_about {
+    margin-left: -20px;
+  }
+  .footer_about_logo {
+    margin-left: -10px;
+  }
+  .footer_about ul {
+    margin-left: -10px;
+  }
+  .footer_useful {
+    width: 50%;
+    float: left;
+  }
+  .form_footer{
+   max-width: 100%;
+  }
+
+  .footer_copyright{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+ 
 }

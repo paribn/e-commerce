@@ -1,3 +1,4 @@
+@import "../base/variables";
 .container {
   margin-top: 20px;
 
@@ -8,16 +9,16 @@
 
     .logo {
       font-size: 16px;
-      margin-left: 50px;
     }
 
     .nav__list {
       display: flex;
-      gap: 54px;
+      gap: 44px;
       margin: 0;
       letter-spacing: 2px;
       font-size: 14px;
       text-transform: uppercase;
+      margin-right: 70px;
       .nav__list__item {
         font-weight: map-get($font-navbar-weights, medium);
         a {
@@ -32,14 +33,13 @@
 
     .wrapper {
       display: flex;
-      margin-right: 99px; /// deyish sonra
       padding: 6px;
 
       .shooping {
         display: flex;
         align-items: center;
         gap: 10px;
-        margin-right: 35px;
+        margin-right: 12px;
         .heart,
         .basket {
           font-size: 18px;
@@ -77,6 +77,7 @@
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  gap: 4px;
 
   .bar {
     height: 3px;
@@ -86,11 +87,14 @@
   }
 }
 
-
-
 @media (max-width: 992px) {
+ .logo{
+    margin-right: 410px;
+  }
   .toggle_button {
     display: flex;
+    border: 1px solid black;
+    padding: 4px;
   }
 
   .active {
