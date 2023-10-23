@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ogani | Template</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../my-css/style.css" />
+    <title>Ogani | Template</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="header__area">
+            <div class="logo">
+              <img src="./assets/img/logo.png.webp" alt="" />
+            </div>
+
+            <nav class="nav_area">
+              <ul class="nav__list">
+                <li class="nav__list__item"><a href="#">Home</a></li>
+                <li class="nav__list__item"><a href="./shop.html">Shop</a></li>
+                <li class="nav__list__item"><a href="#">Pages</a></li>
+                <li class="nav__list__item"><a href="#">Blog</a></li>
+                <li class="nav__list__item"><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+
+            <div class="wrapper">
+              <div class="shooping">
+                <div class="heart">
+                  <i class="fa-solid fa-heart"></i
+                  ><sup class="basket_wishlist_count">1</sup>
+                </div>
+                <div class="basket">
+                  <button id="drawer_btn" class="basket_btn">
+                    <i class="fa fa-shopping-bag"></i>
+                  </button>
+                  <sup class="basket_wishlist_count">5</sup>
+                </div>
+              </div>
+              <div class="header_price">
+                <span>item:</span>
+                <strong> $150.00 </strong>
+              </div>
+            </div>
+            <div class="toggle_button">
+              <a href="#">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="my_drawer">
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <div class="basket_list"></div>
+            <p class="totalBasket">
+              Total <span class="basket-total-count">0</span> product(s):
+              <span class="basket-total-amount"> 0</span> USD
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="hero_shop_categories">
+              <div class="hero_all_shop_categories">
+                <i class="fa-solid fa-bars"></i>
+                <span> All departments</span>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+              <ul class="shop_departments_category">
+                <li><a href="#">Fresh Meat</a></li>
+                <li><a href="#"> Vegetables</a></li>
+                <li><a href="#">Fruit&Nut Gifts</a></li>
+                <li><a href="#">Fresh Berries</a></li>
+                <li><a href="#">Ocean Foods</a></li>
+                <li><a href="#">Butter & Eggs</a></li>
+                <li><a href="#">Fastfood</a></li>
+                <li><a href="#">Fresh Onion</a></li>
+                <li><a href="#">Papayaya & Crips</a></li>
+                <li><a href="#">Oatmeal</a></li>
+                <li><a href="#">Fresh Bananas</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-12 col-sm-12">
+            <div class="hero_search">
+              <div class="search_form">
+                <div class="search_category">
+                  All Categories
+                  <div class="category_icon">
+                    <span>
+                      <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                  </div>
+                </div>
+                <form class="form_hero" action="#">
+                  <input type="text" placeholder="What do u need?" />
+                  <button class="search_btn_category">Search</button>
+                </form>
+              </div>
+              <div class="search_phone">
+                <div class="phone_icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact_text">
+                  <h5>+65 11.188.888</h5>
+                  <span>support 24/7 time</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tomato">
+      <div class="container">
+        <div class="col-12">
+          <div class="tomato_text">
+            <h2>Organi Shop</h2>
+            <div class="tomato_text_item">
+              <h5><a href="./index.html">Home - </a></h5>
+              <h5><a href="./shop.html"> Shop</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product_shop">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="sidebar">
+              <div class="sidebar_item">
+                <h4>Department</h4>
+                <ul>
+                  <li>Fresh Meat</li>
+                  <li>Vegetables</li>
+                  <li>Fruit & Nut Gifts</li>
+                  <li>Fresh Berries</li>
+                  <li>Ocean Foods</li>
+                  <li>Butter & Eggs</li>
+                  <li>Fastfood</li>
+                  <li>Fresh Onion</li>
+                  <li>Papaya & Crips</li>
+                  <li>Oatmeal</li>
+                </ul>
+              </div>
+              <div class="sidebar_item price_sidebar">
+                <h4>Price</h4>
+                <div class="price_range">
+                  <div class="field">
+                    <span>Min</span>
+                    <input type="number" class="input-min" value="1" />
+                  </div>
+                  <div class="field">
+                    <span>Max</span>
+                    <input type="number" class="input-max" value="1000" />
+                  </div>
+                </div>
+                <div class="slider">
+                  <div class="progress"></div>
+                  <div class="ragne-input">
+                    <input
+                      type="range"
+                      class="range-min"
+                      min="0"
+                      max="1000"
+                      value="1"
+                    />
+                    <input
+                      type="range"
+                      class="range-min"
+                      min="0"
+                      max="1000"
+                      value="1000"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar_item">
+                <h4>Colors</h4>
+                <div class="sidebar_item_color">
+                  <label for="color">
+                    <input type="radio" name="color" value="#ffffff" />
+                    White
+                  </label>
+                </div>
+                <div class="sidebar_item_color">
+                  <label for="color">
+                    <input type="radio" name="color" value="#A9A9A9" />
+                    Gray
+                  </label>
+                </div>
+                <div class="sidebar_item_color">
+                  <label for="color">
+                    <input type="radio" name="color" value="#C4A69D" />
+                    Purple
+                  </label>
+                </div>
+                <div class="sidebar_item_color">
+                  <label for="color">
+                    <input type="radio" name="color" value="#dbd6d6" />
+                    Blue
+                  </label>
+                </div>
+                <div class="sidebar_item_color">
+                  <label for="color">
+                    <input type="radio" name="color" value="#B22222" />
+                    Red
+                  </label>
+                </div>
+                <div class="sidebar_item_color">
+                  <label for="color">
+                    <input type="radio" name="color" value="#2E8B57" />
+                    Green
+                  </label>
+                </div>
+              </div>
+              <div class="sidebar_item">
+                <div class="latest_text_shop">
+                  <div class="latest_text_icons_shop">
+                    <div class="latest_text_item_shop">
+                      <h4>Latest Products</h4>
+                    </div>
+                    <div class="latest_text_icon_shop">
+                      <button>
+                        <span>
+                          <i class="fa-solid fa-angle-left"></i>
+                        </span>
+                      </button>
+                      <button>
+                        <span>
+                          <i class="fa-solid fa-angle-right"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="latest_product_slider_shop">
+                    <div class="latest_product_slider_item_shop">
+                      <div class="latest_shop_product">
+                        <div class="image_shop_product">
+                          <img
+                            src="./assets/img/section4/lp-1.jpg.webp"
+                            alt=""
+                          />
+                        </div>
+                        <div class="product_shop_text">
+                          <h6><a href="#">Crab Pool Security</a></h6>
+                          <h5>$30.00</h5>
+                        </div>
+                      </div>
+                      <div class="latest_shop_product">
+                        <div class="image_shop_product">
+                          <img
+                            src="./assets/img/section4/lp-2.jpg.webp"
+                            alt=""
+                          />
+                        </div>
+                        <div class="product_shop_text">
+                          <h6><a href="#">Crab Pool Security</a></h6>
+                          <h5>$30.00</h5>
+                        </div>
+                      </div>
+                      <div class="latest_shop_product">
+                        <div class="image_shop_product">
+                          <img
+                            src="./assets/img/section4/lp-3.jpg.webp"
+                            alt=""
+                          />
+                        </div>
+                        <div class="product_shop_text">
+                          <h6><a href="#">Crab Pool Security</a></h6>
+                          <h5>$30.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9">
+            <div class="product_discount">
+              <div class="product_discount_title">
+                <h2>Sale Off</h2>
+              </div>
+              <div class="product_discount_slider row">
+                <div class="col-4">
+                  <div class="shop_carusel">
+                    <div class="image_shop_discount">
+                      <img
+                        src="./assets/img/section2/feature-6.jpg.webp"
+                        alt=""
+                      />
+                      <div class="product_discount_precent">-20%</div>
+                      <div class="product_item_hover_icon">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product_item_text">
+                        <span>Dried Fruit</span>
+                        <h5>
+                          <a href="#">Orange</a>
+                        </h5>
+                        <div class="product_item_price">
+                          <span>$30.00</span>
+                          <del>$36.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="shop_carusel">
+                    <div class="image_shop_discount">
+                      <img
+                        src="./assets/img/section2/feature-8.jpg.webp"
+                        alt=""
+                      />
+                      <div class="product_discount_precent">-20%</div>
+                      <div class="product_item_hover_icon">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product_item_text">
+                        <span>Dried Fruit</span>
+                        <h5>
+                          <a href="#">Orange</a>
+                        </h5>
+                        <div class="product_item_price">
+                          <span>$30.00</span>
+                          <del>$36.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="shop_carusel">
+                    <div class="image_shop_discount">
+                      <img src="./assets/img/section2/cat-1.jpg.webp" alt="" />
+                      <div class="product_discount_precent">-20%</div>
+                      <div class="product_item_hover_icon">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product_item_text">
+                        <span>Dried Fruit</span>
+                        <h5>
+                          <a href="#">Orange</a>
+                        </h5>
+                        <div class="product_item_price">
+                          <span>$30.00</span>
+                          <del>$36.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="shop_carusel">
+                    <div class="image_shop_discount">
+                      <img
+                        src="./assets/img/section2/feature-3.jpg.webp"
+                        alt=""
+                      />
+                      <div class="product_discount_precent">-20%</div>
+                      <div class="product_item_hover_icon">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product_item_text">
+                        <span>Dried Fruit</span>
+                        <h5>
+                          <a href="#">Orange</a>
+                        </h5>
+                        <div class="product_item_price">
+                          <span>$30.00</span>
+                          <del>$36.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="shop_carusel">
+                    <div class="image_shop_discount">
+                      <img
+                        src="./assets/img/section2/feature-7.jpg.webp"
+                        alt=""
+                      />
+                      <div class="product_discount_precent">-20%</div>
+                      <div class="product_item_hover_icon">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product_item_text">
+                        <span>Dried Fruit</span>
+                        <h5>
+                          <a href="#">Orange</a>
+                        </h5>
+                        <div class="product_item_price">
+                          <span>$30.00</span>
+                          <del>$36.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="shop_carusel">
+                    <div class="image_shop_discount">
+                      <img
+                        src="./assets/img/section2/product-11.jpg.webp"
+                        alt=""
+                      />
+                      <div class="product_discount_precent">-20%</div>
+                      <div class="product_item_hover_icon">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product_item_text">
+                        <span>Dried Fruit</span>
+                        <h5>
+                          <a href="#">Orange</a>
+                        </h5>
+                        <div class="product_item_price">
+                          <span>$30.00</span>
+                          <del>$36.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="filter_item">
+              <div class="row">
+                <div class="col-lg-4 col-md-5">
+                  <div class="filter_sort">
+                    <span>Sort By</span>
+                    <select>
+                      <option value="0">Default</option>
+                      <option value="0">Default</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div class="filter_found">
+                    <h6><span>16</span> Products found</h6>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-3">
+                  <div class="filter_option">
+                    <span class="icon_grid-2x2">
+                      <svg
+                        aria-hidden="true"
+                        style="width: 20px"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="grid-2"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-inline--fa fa-grid-2 fa-lg"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224 80c0-26.5-21.5-48-48-48H80C53.5 32 32 53.5 32 80v96c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48V80zm0 256c0-26.5-21.5-48-48-48H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48V336zM288 80v96c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48H336c-26.5 0-48 21.5-48 48zM480 336c0-26.5-21.5-48-48-48H336c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48V336z"
+                          class=""
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="icon_ul"
+                      ><svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="list-ul"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-inline--fa fa-list-ul fa-lg"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M64 144a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM64 464a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm48-208a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                          class=""
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="shop_products"></div>
+            </div>
+
+            <div class="product_pagination">
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-lg-4">
+            <div class="footer_about">
+              <div class="footer_about_logo">
+                <a href="/index.html"
+                  ><img src="./assets/img/logo.png.webp" alt=""
+                /></a>
+              </div>
+              <ul>
+                <li>Adress:60-49 Road 11378 New York</li>
+                <li>Phone:+994 55 926 66 31</li>
+                <li>email:hello@colorlib.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="footer_useful">
+              <h6>Useful Links</h6>
+              <div class="footer_ul">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">About Our Shop</a></li>
+                  <li><a href="#">Secure Shopping</a></li>
+                  <li><a href="#">Delivery information</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Our Sitemap</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Who We Are</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Innovation</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="footer_widget">
+              <h6>Join Our Newsletter Now</h6>
+              <p>
+                Get E-mail updates about our latest shop and special offers.
+              </p>
+              <form class="form_footer" action="#">
+                <input type="text" placeholder="Enter your mail" />
+                <button class="footer_btn">Subscribe</button>
+              </form>
+            </div>
+            <div class="footer_social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <div class="footer_copyright">
+              <div class="footer_copyright_text">
+                <p>
+                  Copyright ©2023 All rights reserved | This template is made
+                  with <span><i class="fa-solid fa-heart"></i> </span>by
+                  <a href="https://colorlib.com/">Colorlib</a>
+                </p>
+              </div>
+              <div class="footer_copyright_payment">
+                <img src="./assets/img/footer/payment-item.png.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./assets/js/shop.js"></script>
+    <script src="./assets/js/basketShop.js"></script>
+  </body>
+</html>
